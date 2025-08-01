@@ -1,0 +1,20 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.userComp {
+  margin: 30px;
+}
+.userComp img {
+  width: 10%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.userComp h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.userComp h3 span {
+  font-weight: 100;
+}
