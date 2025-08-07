@@ -3,6 +3,7 @@ import './App.css'
 import { EventList } from './EventList';
 import { Movie } from './Movie';
 import { MovieList } from './MovieList';
+import { Link, Route, Routes } from 'react-router-dom';
 export default function App() {
   return (
     <div>
@@ -10,12 +11,33 @@ export default function App() {
       {/* <EventList />
       <Movie/> */}
          {/* <MovieList/> */}
-         <ColorGame/>
+         {/* <ColorGame/> */}
+         <NavRouter/>
 
     </div>
   );
 }
 
+
+
+function NavRouter(){
+  return (
+    <div>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/colorgame">Color Game</Link></li>
+        </ul>
+      </nav>
+      {/* <ColorGame/> */}
+
+      <Routes>
+        <Route path="/" element={<MovieList />} />
+        <Route path="/colorgame" element={<ColorGame />} />
+      </Routes>
+    </div>
+  );
+}
 
 
 function ColorGame() {
