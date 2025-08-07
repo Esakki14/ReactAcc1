@@ -1,4 +1,4 @@
-.App {
+/* .App {
   font-family: sans-serif;
   text-align: center;
 }
@@ -17,4 +17,99 @@
 }
 .userComp h3 span {
   font-weight: 100;
+} */
+
+
+
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+.user-container {
+  img {
+    height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  span {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.user-list-container {
+  display: grid;
+  gap: 42px;
+}
+
+.movie-container {
+  width: 340px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-poster {
+  height: 640px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.movie-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.movie-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.movie-rating {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.movie-summary {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.movie-content-container {
+  padding: 16px;
+}
+
+.movie-list-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  /* RAM */
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  justify-items: center;
+  gap: 32px; */
+}
+
+.counter-btn-container {
+  display: flex;
+  gap: 8px;
+
+  button {
+    font-size: 16px;
+  }
 }
